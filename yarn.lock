@@ -1557,7 +1557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -1684,6 +1684,15 @@ __metadata:
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
   checksum: 902a9f5d8967a3e2faf138d5cb784b9979bad2e6db5357c5b21c568df4ebe62bcb15108af1b2253744844eb964fc023fbd9afbbbb6ddd0bcc204c6fb5b7bf3af
+  languageName: node
+  linkType: hard
+
+"console-table-printer@npm:^2.12.1":
+  version: 2.14.6
+  resolution: "console-table-printer@npm:2.14.6"
+  dependencies:
+    simple-wcswidth: ^1.0.1
+  checksum: 2a31346c6a992c0a47d6885cb17fbc6576ad76881faa952a886be87a77adeb1389edddb257bcd98eb6921be848b2add0d115dae5428e45a993ae25ce67ea773c
   languageName: node
   linkType: hard
 
@@ -2654,7 +2663,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -2679,7 +2688,7 @@ __metadata:
     eslint: 8.46.0
     eslint-config-next: 13.4.12
     langchain: ^0.3.2
-    langsmith: ^0.1.66
+    langsmith: ^0.3.63
     next: 13.4.12
     pdf-parse: ^1.1.1
     postcss: 8.4.27
@@ -3567,7 +3576,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"langsmith@npm:^0.1.65, langsmith@npm:^0.1.66":
+"langsmith@npm:^0.1.65":
   version: 0.1.66
   resolution: "langsmith@npm:0.1.66"
   dependencies:
@@ -3583,6 +3592,35 @@ __metadata:
     openai:
       optional: true
   checksum: 9c0cb365e2278a255dc0d045402fbec67cf3a6314e7858b398a267b1e97d3f24e5b4ba5286c80a3fe6c13443ac1fca8fd1555f3a0990b74b7c6be8c608581394
+  languageName: node
+  linkType: hard
+
+"langsmith@npm:^0.3.63":
+  version: 0.3.68
+  resolution: "langsmith@npm:0.3.68"
+  dependencies:
+    "@types/uuid": ^10.0.0
+    chalk: ^4.1.2
+    console-table-printer: ^2.12.1
+    p-queue: ^6.6.2
+    p-retry: 4
+    semver: ^7.6.3
+    uuid: ^10.0.0
+  peerDependencies:
+    "@opentelemetry/api": "*"
+    "@opentelemetry/exporter-trace-otlp-proto": "*"
+    "@opentelemetry/sdk-trace-base": "*"
+    openai: "*"
+  peerDependenciesMeta:
+    "@opentelemetry/api":
+      optional: true
+    "@opentelemetry/exporter-trace-otlp-proto":
+      optional: true
+    "@opentelemetry/sdk-trace-base":
+      optional: true
+    openai:
+      optional: true
+  checksum: 5d9df0a7e797a4acc37e718d445ffbd904eea765d276e34c341a54ccfadc517541801e14a682491d529c59b1e166cd0687be609527255990057cbb74b64a7fac
   languageName: node
   linkType: hard
 
@@ -4852,7 +4890,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.4#~builtin<compat/resolve>":
   version: 1.22.8
-  resolution: "resolve@patch:resolve@npm%3A1.22.8#~builtin<compat/resolve>::version=1.22.8&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.8#~builtin<compat/resolve>::version=1.22.8&hash=07638b"
   dependencies:
     is-core-module: ^2.13.0
     path-parse: ^1.0.7
@@ -4865,7 +4903,7 @@ __metadata:
 
 "resolve@patch:resolve@^2.0.0-next.5#~builtin<compat/resolve>":
   version: 2.0.0-next.5
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.5#~builtin<compat/resolve>::version=2.0.0-next.5&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.5#~builtin<compat/resolve>::version=2.0.0-next.5&hash=07638b"
   dependencies:
     is-core-module: ^2.13.0
     path-parse: ^1.0.7
@@ -5092,6 +5130,13 @@ __metadata:
   dependencies:
     is-arrayish: ^0.3.1
   checksum: a7f3f2ab5c76c4472d5c578df892e857323e452d9f392e1b5cf74b74db66e6294a1e1b8b390b519fa1b96b5b613f2a37db6cffef52c3f1f8f3c5ea64eb2d54c0
+  languageName: node
+  linkType: hard
+
+"simple-wcswidth@npm:^1.0.1":
+  version: 1.1.2
+  resolution: "simple-wcswidth@npm:1.1.2"
+  checksum: 210eea36d28fb8dbadb1dcf5a19e747c1435548ec56bfd86f1c79fb9ddf676b252d84632d3ab9a787251281c499520e63bca1d9f5997cbd66c25996c10e056b1
   languageName: node
   linkType: hard
 
@@ -5658,7 +5703,7 @@ __metadata:
 
 "typescript@patch:typescript@5.1.6#~builtin<compat/typescript>":
   version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=77c9e2"
+  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
